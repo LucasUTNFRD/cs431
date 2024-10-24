@@ -11,7 +11,6 @@ fn main() -> io::Result<()> {
     // Firefox works well.  If you want to test using command line only, use curl. If you want to
     // run it on the lab server, you may need to change the port number to something else.
     println!("Run `curl http://{ADDR}/KEY` to query the server with KEY");
-
     // The thread pool.
     //
     // In the thread pool, we'll execute:
