@@ -140,7 +140,8 @@ impl Drop for ThreadPool {
     /// then this function should panic too.
     fn drop(&mut self) {
         if let Some(sender) = &self.job_sender {
-            drop(sender);
+            // drop(sender);
+            let _ = sender;
         }
         // todo!()
     }
